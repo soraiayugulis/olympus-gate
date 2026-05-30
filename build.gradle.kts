@@ -94,5 +94,4 @@ detekt {
     buildUponDefaultConfig = true
     allRules = false
     config.setFrom(files("$projectDir/config/detekt/detekt.yml"))
-    ignoreFailures = true
 }

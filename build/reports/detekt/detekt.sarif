@@ -3,30 +3,7 @@
   "version": "2.1.0",
   "runs": [
     {
-      "results": [
-        {
-          "level": "warning",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///Users/sysout/codesys/projects/olympus-gate/src/main/kotlin/com/olympusgate/OlympusGateApplication.kt"
-                },
-                "region": {
-                  "endColumn": 50,
-                  "endLine": 10,
-                  "startColumn": 43,
-                  "startLine": 10
-                }
-              }
-            }
-          ],
-          "message": {
-            "text": "In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty."
-          },
-          "ruleId": "detekt.performance.SpreadOperator"
-        }
-      ],
+      "results": [],
       "tool": {
         "driver": {
           "downloadUri": "https://github.com/detekt/detekt/releases/download/v1.23.6/detekt",

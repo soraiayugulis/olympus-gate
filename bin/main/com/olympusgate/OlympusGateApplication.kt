@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class OlympusGateApplication
 
 fun main(args: Array<String>) {
-    runApplication<OlympusGateApplication>(*args)
+    runApplication<OlympusGateApplication>(args = args)
 }

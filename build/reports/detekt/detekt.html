@@ -176,36 +176,19 @@
     <li>4 comment lines of code (cloc)</li>
     <li>39 cyclomatic complexity (mcc)</li>
     <li>6 cognitive complexity</li>
-    <li>1 number of total code smells</li>
+    <li>0 number of total code smells</li>
     <li>1% comment source ratio</li>
     <li>153 mcc per 1,000 lloc</li>
-    <li>3 code smells per 1,000 lloc</li>
+    <li>0 code smells per 1,000 lloc</li>
   </ul>
 </div>
 
 
 <h2>Findings</h2>
-<div>Total: 1
-  <h3>performance: 1</h3>
-  <details id="SpreadOperator" open="open">
-    <summary class="rule-container"><span class="rule">SpreadOperator: 1 </span><span class="description">In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.</span></summary>
-<a href="https://detekt.dev/docs/rules/performance#spreadoperator">Documentation</a>
-    <ul>
-      <li><span class="location">/Users/sysout/codesys/projects/olympus-gate/src/main/kotlin/com/olympusgate/OlympusGateApplication.kt:10:43</span><span class="message">In most cases using a spread operator causes a full copy of the array to be created before calling a method. This may result in a performance penalty.</span>
-        <pre><code><span class="lineno">   7 </span>class OlympusGateApplication
-<span class="lineno">   8 </span>
-<span class="lineno">   9 </span>fun main(args: Array&lt;String&gt;) {
-<span class="lineno">  10 </span>    runApplication&lt;OlympusGateApplication&gt;<span class="error">(*args)</span>
-<span class="lineno">  11 </span>}
-<span class="lineno">  12 </span>
-</code></pre>
-      </li>
-    </ul>
-  </details>
-</div>
+<div>Total: 0</div>
 
 
-generated with <a href="https://detekt.dev/">detekt version 1.23.6</a> on 2026-05-30 20:22:34 UTC.
+generated with <a href="https://detekt.dev/">detekt version 1.23.6</a> on 2026-05-30 20:23:26 UTC.
 
 </body>
 </html>
