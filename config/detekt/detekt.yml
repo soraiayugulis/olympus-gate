@@ -2,24 +2,5 @@ build:
   maxIssues: 0
   excludeCorrectable: false
 
-config:
-  checks:
-    emptyCodeBlock:
-      active: true
-    excessivePublicCount:
-      active: true
-    forbiddenComment:
-      active: false
-    magicNumber:
-      active: false
-    maxLineLength:
-      active: true
-      maxLineLength: 120
-    returnCount:
-      active: true
-      max: 3
-    unsafeCast:
-      active: true
-
 console-reports:
   active: true

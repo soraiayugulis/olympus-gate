@@ -1,0 +1,1 @@
+SpreadOperator - [main] at /Users/sysout/codesys/projects/olympus-gate/src/main/kotlin/com/olympusgate/OlympusGateApplication.kt:10:43 - Signature=OlympusGateApplication.kt$(*args)

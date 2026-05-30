@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.009s</div>
+<div class="counter">0.024s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">database connection should succeed()</td>
-<td class="success">0.009s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,28 +87,28 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2026-05-30 17:18:21 - Could not detect default configuration classes for test class [com.olympusgate.config.DatabaseConfigTest]: DatabaseConfigTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-05-30 17:18:21 - Found @SpringBootConfiguration com.olympusgate.OlympusGateApplication for test class com.olympusgate.config.DatabaseConfigTest
-2026-05-30 17:18:21 - Image pull policy will be performed by: DefaultPullPolicy()
-2026-05-30 17:18:21 - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-2026-05-30 17:18:21 - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
-2026-05-30 17:18:21 - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-2026-05-30 17:18:21 - Docker host IP address is localhost
-2026-05-30 17:18:21 - Connected to docker: 
+<pre>2026-05-30 17:22:46 - Could not detect default configuration classes for test class [com.olympusgate.config.DatabaseConfigTest]: DatabaseConfigTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-05-30 17:22:46 - Found @SpringBootConfiguration com.olympusgate.OlympusGateApplication for test class com.olympusgate.config.DatabaseConfigTest
+2026-05-30 17:22:46 - Image pull policy will be performed by: DefaultPullPolicy()
+2026-05-30 17:22:46 - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2026-05-30 17:22:46 - Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2026-05-30 17:22:46 - Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2026-05-30 17:22:46 - Docker host IP address is localhost
+2026-05-30 17:22:46 - Connected to docker: 
   Server Version: 28.5.2
   API Version: 1.51
   Operating System: OrbStack
   Total Memory: 12007 MB
-2026-05-30 17:18:21 - Creating container for image: testcontainers/ryuk:0.6.0
-2026-05-30 17:18:21 - Container testcontainers/ryuk:0.6.0 is starting: fd74088edbbc5ccb755ca8224086b28e3333168908808a8945ee5a1b2b4cdf2b
-2026-05-30 17:18:21 - Container testcontainers/ryuk:0.6.0 started in PT0.315006S
-2026-05-30 17:18:21 - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2026-05-30 17:18:21 - Checking the system...
-2026-05-30 17:18:21 - ✔︎ Docker server version should be at least 1.6.0
-2026-05-30 17:18:21 - Creating container for image: postgres:15-alpine
-2026-05-30 17:18:21 - Container postgres:15-alpine is starting: 6a939c63da4151e021c28c7450e9720a751720d468b95d1a85ec40fb2f72075c
-2026-05-30 17:18:23 - Container postgres:15-alpine started in PT1.828906S
-2026-05-30 17:18:23 - Container is started (JDBC URL: jdbc:postgresql://localhost:33033/test?loggerLevel=OFF)
+2026-05-30 17:22:46 - Creating container for image: testcontainers/ryuk:0.6.0
+2026-05-30 17:22:46 - Container testcontainers/ryuk:0.6.0 is starting: bb875c2301c7ebbe0c9476bc39ea2b878b6dd6e209dd7644355470a881d32365
+2026-05-30 17:22:46 - Container testcontainers/ryuk:0.6.0 started in PT0.419915S
+2026-05-30 17:22:46 - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2026-05-30 17:22:46 - Checking the system...
+2026-05-30 17:22:46 - ✔︎ Docker server version should be at least 1.6.0
+2026-05-30 17:22:46 - Creating container for image: postgres:15-alpine
+2026-05-30 17:22:47 - Container postgres:15-alpine is starting: b1bbf76f055fa40710d3ff4f4be177afdc817c95b760121c72d278e2a81e14f0
+2026-05-30 17:22:48 - Container postgres:15-alpine started in PT1.868586S
+2026-05-30 17:22:48 - Container is started (JDBC URL: jdbc:postgresql://localhost:33035/test?loggerLevel=OFF)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -118,38 +118,38 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.5)
 
-2026-05-30 17:18:23 - Starting DatabaseConfigTest using Java 21.0.10 with PID 60919 (started by sysout in /Users/sysout/codesys/projects/olympus-gate)
-2026-05-30 17:18:23 - Running with Spring Boot v3.2.5, Spring v6.1.6
-2026-05-30 17:18:23 - The following 1 profile is active: &quot;dev&quot;
-2026-05-30 17:18:23 - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-05-30 17:18:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-05-30 17:18:23 - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
-2026-05-30 17:18:23 - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-05-30 17:18:23 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-05-30 17:18:23 - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
-2026-05-30 17:18:23 - HikariPool-1 - Starting...
-2026-05-30 17:18:24 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4127dcdb
-2026-05-30 17:18:24 - HikariPool-1 - Start completed.
-2026-05-30 17:18:24 - Flyway Community Edition 9.22.3 by Redgate
-2026-05-30 17:18:24 - See release notes here: https://rd.gt/416ObMi
-2026-05-30 17:18:24 - 
-2026-05-30 17:18:24 - Database: jdbc:postgresql://localhost:33033/test (PostgreSQL 15.17)
-2026-05-30 17:18:24 - Schema history table &quot;public&quot;.&quot;flyway_schema_history&quot; does not exist yet
-2026-05-30 17:18:24 - Successfully validated 1 migration (execution time 00:00.009s)
-2026-05-30 17:18:24 - Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
-2026-05-30 17:18:24 - Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
-2026-05-30 17:18:24 - Migrating schema &quot;public&quot; to version &quot;1 - init&quot;
-2026-05-30 17:18:24 - Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.002s)
-2026-05-30 17:18:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-05-30 17:18:24 - HHH000412: Hibernate ORM core version 6.4.4.Final
-2026-05-30 17:18:24 - HHH000026: Second-level cache disabled
-2026-05-30 17:18:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-05-30 17:18:24 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-05-30 17:18:24 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-05-30 17:18:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-05-30 17:18:24 - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2026-05-30 17:18:25 - Exposing 1 endpoint(s) beneath base path '/actuator'
-2026-05-30 17:18:25 - Started DatabaseConfigTest in 1.426 seconds (process running for 6.521)
+2026-05-30 17:22:48 - Starting DatabaseConfigTest using Java 21.0.10 with PID 62001 (started by sysout in /Users/sysout/codesys/projects/olympus-gate)
+2026-05-30 17:22:48 - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-05-30 17:22:48 - The following 1 profile is active: &quot;dev&quot;
+2026-05-30 17:22:49 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-30 17:22:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-30 17:22:49 - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2026-05-30 17:22:49 - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-30 17:22:49 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-05-30 17:22:49 - Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2026-05-30 17:22:49 - HikariPool-1 - Starting...
+2026-05-30 17:22:49 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4998944b
+2026-05-30 17:22:49 - HikariPool-1 - Start completed.
+2026-05-30 17:22:49 - Flyway Community Edition 9.22.3 by Redgate
+2026-05-30 17:22:49 - See release notes here: https://rd.gt/416ObMi
+2026-05-30 17:22:49 - 
+2026-05-30 17:22:49 - Database: jdbc:postgresql://localhost:33035/test (PostgreSQL 15.17)
+2026-05-30 17:22:49 - Schema history table &quot;public&quot;.&quot;flyway_schema_history&quot; does not exist yet
+2026-05-30 17:22:49 - Successfully validated 1 migration (execution time 00:00.009s)
+2026-05-30 17:22:49 - Creating Schema History table &quot;public&quot;.&quot;flyway_schema_history&quot; ...
+2026-05-30 17:22:49 - Current version of schema &quot;public&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2026-05-30 17:22:49 - Migrating schema &quot;public&quot; to version &quot;1 - init&quot;
+2026-05-30 17:22:49 - Successfully applied 1 migration to schema &quot;public&quot;, now at version v1 (execution time 00:00.002s)
+2026-05-30 17:22:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-30 17:22:49 - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-05-30 17:22:49 - HHH000026: Second-level cache disabled
+2026-05-30 17:22:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-30 17:22:50 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-30 17:22:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-30 17:22:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-30 17:22:50 - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-05-30 17:22:51 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-30 17:22:51 - Started DatabaseConfigTest in 2.222 seconds (process running for 8.345)
 </pre>
 </span>
 </div>
@@ -161,7 +161,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at May 30, 2026, 5:18:25 PM</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at May 30, 2026, 5:22:51 PM</p>
 </div>
 </div>
 </body>

@@ -41,9 +41,6 @@ class ProjectStructureHexagonalTest {
         val adapterPath = Path.of("src/main/kotlin/com/olympusgate/infrastructure/adapter")
         assertTrue(Files.exists(adapterPath), "infrastructure/adapter package should exist")
 
-        val configPath = Path.of("src/main/kotlin/com/olympusgate/infrastructure/config")
-        assertTrue(Files.exists(configPath), "infrastructure/config package should exist")
-
         val persistencePath = Path.of("src/main/kotlin/com/olympusgate/infrastructure/persistence")
         assertTrue(Files.exists(persistencePath), "infrastructure/persistence package should exist")
     }

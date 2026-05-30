@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.olympusgate.CiWorkflowTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T20:18:21" hostname="sysoutMac.local" time="0.002">
+<testsuite name="com.olympusgate.CiWorkflowTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T20:22:46" hostname="sysoutMac.local" time="0.003">
   <properties/>
   <testcase name="github actions workflow file should exist()" classname="com.olympusgate.CiWorkflowTest" time="0.001"/>
-  <testcase name="ci workflow should contain build step for push events()" classname="com.olympusgate.CiWorkflowTest" time="0.001"/>
+  <testcase name="ci workflow should contain build step for push events()" classname="com.olympusgate.CiWorkflowTest" time="0.0"/>
   <testcase name="ci workflow should contain linting step for pull_request events()" classname="com.olympusgate.CiWorkflowTest" time="0.0"/>
-  <testcase name="ci workflow should contain test step for pull_request events()" classname="com.olympusgate.CiWorkflowTest" time="0.0"/>
+  <testcase name="ci workflow should contain test step for pull_request events()" classname="com.olympusgate.CiWorkflowTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
