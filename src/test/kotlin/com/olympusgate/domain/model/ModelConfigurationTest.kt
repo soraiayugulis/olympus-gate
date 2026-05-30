@@ -6,18 +6,18 @@ import kotlin.test.assertEquals
 import kotlin.test.assertTrue
 
 class ModelConfigurationTest {
-
     @Test
     fun `should accept valid input`() {
-        val config = ModelConfiguration(
-            id = "gpt-4",
-            name = "GPT-4",
-            provider = "openai",
-            costPer1kTokens = 0.03,
-            maxTokens = 8192,
-            capabilities = listOf("code", "reasoning", "qa"),
-            enabled = true
-        )
+        val config =
+            ModelConfiguration(
+                id = "gpt-4",
+                name = "GPT-4",
+                provider = "openai",
+                costPer1kTokens = 0.03,
+                maxTokens = 8192,
+                capabilities = listOf("code", "reasoning", "qa"),
+                enabled = true,
+            )
 
         assertEquals("gpt-4", config.id)
         assertEquals("GPT-4", config.name)
@@ -30,51 +30,54 @@ class ModelConfigurationTest {
 
     @Test
     fun `should reject negative cost values`() {
-        val exception = assertThrows<IllegalArgumentException> {
-            ModelConfiguration(
-                id = "gpt-4",
-                name = "GPT-4",
-                provider = "openai",
-                costPer1kTokens = -0.03,
-                maxTokens = 8192,
-                capabilities = listOf("code", "reasoning", "qa"),
-                enabled = true
-            )
-        }
+        val exception =
+            assertThrows<IllegalArgumentException> {
+                ModelConfiguration(
+                    id = "gpt-4",
+                    name = "GPT-4",
+                    provider = "openai",
+                    costPer1kTokens = -0.03,
+                    maxTokens = 8192,
+                    capabilities = listOf("code", "reasoning", "qa"),
+                    enabled = true,
+                )
+            }
 
         assertTrue(exception.message!!.contains("non-negative"))
     }
 
     @Test
     fun `should reject zero max tokens`() {
-        val exception = assertThrows<IllegalArgumentException> {
-            ModelConfiguration(
-                id = "gpt-4",
-                name = "GPT-4",
-                provider = "openai",
-                costPer1kTokens = 0.03,
-                maxTokens = 0,
-                capabilities = listOf("code", "reasoning", "qa"),
-                enabled = true
-            )
-        }
+        val exception =
+            assertThrows<IllegalArgumentException> {
+                ModelConfiguration(
+                    id = "gpt-4",
+                    name = "GPT-4",
+                    provider = "openai",
+                    costPer1kTokens = 0.03,
+                    maxTokens = 0,
+                    capabilities = listOf("code", "reasoning", "qa"),
+                    enabled = true,
+                )
+            }
 
         assertTrue(exception.message!!.contains("positive"))
     }
 
     @Test
     fun `should require non-empty capabilities list`() {
-        val exception = assertThrows<IllegalArgumentException> {
-            ModelConfiguration(
-                id = "gpt-4",
-                name = "GPT-4",
-                provider = "openai",
-                costPer1kTokens = 0.03,
-                maxTokens = 8192,
-                capabilities = emptyList(),
-                enabled = true
-            )
-        }
+        val exception =
+            assertThrows<IllegalArgumentException> {
+                ModelConfiguration(
+                    id = "gpt-4",
+                    name = "GPT-4",
+                    provider = "openai",
+                    costPer1kTokens = 0.03,
+                    maxTokens = 8192,
+                    capabilities = emptyList(),
+                    enabled = true,
+                )
+            }
 
         assertTrue(exception.message!!.contains("empty"))
     }
