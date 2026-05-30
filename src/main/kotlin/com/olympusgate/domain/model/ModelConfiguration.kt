@@ -7,7 +7,7 @@ data class ModelConfiguration(
     val costPer1kTokens: Double,
     val maxTokens: Int,
     val capabilities: List<String>,
-    val enabled: Boolean
+    val enabled: Boolean,
 ) {
     init {
         require(costPer1kTokens >= 0) { "Cost per 1k tokens must be non-negative" }

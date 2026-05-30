@@ -6,7 +6,7 @@ data class SelectionRule(
     val priority: Int,
     val condition: SelectionCondition,
     val targetModelId: String,
-    val enabled: Boolean
+    val enabled: Boolean,
 ) {
     init {
         require(priority >= 0) { "Priority must be non-negative" }
@@ -17,7 +17,7 @@ data class SelectionRule(
 data class SelectionCondition(
     val type: ConditionType,
     val operator: Operator,
-    val value: String
+    val value: String,
 )
 
 enum class ConditionType {
@@ -25,7 +25,7 @@ enum class ConditionType {
     COMPLEXITY,
     TASK_TYPE,
     BUDGET,
-    CAPABILITY
+    CAPABILITY,
 }
 
 enum class Operator {
@@ -36,5 +36,5 @@ enum class Operator {
     LESS_THAN_OR_EQUALS,
     GREATER_THAN_OR_EQUALS,
     CONTAINS,
-    NOT_CONTAINS
+    NOT_CONTAINS,
 }

@@ -3,7 +3,7 @@ package com.olympusgate.domain.model
 data class Request(
     val prompt: String,
     val context: Context,
-    val options: Options
+    val options: Options,
 ) {
     init {
         require(prompt.isNotBlank()) { "Prompt cannot be blank" }
@@ -13,7 +13,7 @@ data class Request(
 data class Context(
     val type: String,
     val content: Any,
-    val metadata: Map<String, Any>
+    val metadata: Map<String, Any>,
 )
 
 data class Options(
@@ -22,7 +22,7 @@ data class Options(
     val requireStreaming: Boolean,
     val returnMode: ReturnMode,
     val preferredModel: String?,
-    val excludeModels: List<String>
+    val excludeModels: List<String>,
 ) {
     init {
         if (maxBudget != null) {
@@ -34,10 +34,10 @@ data class Options(
 enum class Priority {
     LOW,
     MEDIUM,
-    HIGH
+    HIGH,
 }
 
 enum class ReturnMode {
     MODEL_ONLY,
-    RESPONSE
+    RESPONSE,
 }

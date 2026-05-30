@@ -4,14 +4,14 @@ data class Response(
     val content: String?,
     val modelInfo: ModelInfo,
     val routingMetadata: RoutingMetadata,
-    val returnMode: ReturnMode
+    val returnMode: ReturnMode,
 )
 
 data class ModelInfo(
     val modelId: String,
     val provider: String,
     val estimatedCost: Double,
-    val estimatedTokens: Int
+    val estimatedTokens: Int,
 ) {
     init {
         require(estimatedCost >= 0) { "Estimated cost must be non-negative" }
@@ -23,7 +23,7 @@ data class RoutingMetadata(
     val selectedModelId: String,
     val selectionReason: String,
     val matchedRuleId: String?,
-    val latencyMs: Long
+    val latencyMs: Long,
 ) {
     init {
         require(selectedModelId.isNotBlank()) { "Selected model ID cannot be blank" }
