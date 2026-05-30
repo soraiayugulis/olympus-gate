@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.olympusgate.ProjectStructureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-05-30T20:18:21" hostname="sysoutMac.local" time="0.001">
+  <properties/>
+  <testcase name="build gradle kts should contain test dependencies()" classname="com.olympusgate.ProjectStructureTest" time="0.0"/>
+  <testcase name="build gradle kts should contain required dependencies()" classname="com.olympusgate.ProjectStructureTest" time="0.0"/>
+  <testcase name="build gradle kts should contain kotlin plugin()" classname="com.olympusgate.ProjectStructureTest" time="0.001"/>
+  <testcase name="build gradle kts should contain spring boot plugin()" classname="com.olympusgate.ProjectStructureTest" time="0.0"/>
+  <testcase name="build gradle kts should exist()" classname="com.olympusgate.ProjectStructureTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

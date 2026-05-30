@@ -1,0 +1,6 @@
+[31m/Users/sysout/codesys/projects/olympus-gate/[0mbuild.gradle.kts[31m:[0m36[31m:1:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/[0mbuild.gradle.kts[31m:[0m42[31m:43:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/[0mbuild.gradle.kts[31m:[0m48[31m:60:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+
+Summary error count (descending) by rule:
+  standard:no-trailing-spaces: 3

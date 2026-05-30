@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.olympusgate.ApplicationConfigurationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-05-30T20:18:20" hostname="sysoutMac.local" time="0.443">
+  <properties/>
+  <testcase name="server port should be configured()" classname="com.olympusgate.ApplicationConfigurationTest" time="0.434"/>
+  <testcase name="logging configuration should be present()" classname="com.olympusgate.ApplicationConfigurationTest" time="0.002"/>
+  <testcase name="application name should be configured()" classname="com.olympusgate.ApplicationConfigurationTest" time="0.002"/>
+  <testcase name="application context should load()" classname="com.olympusgate.ApplicationConfigurationTest" time="0.001"/>
+  <system-out><![CDATA[17:18:18.980 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.olympusgate.ApplicationConfigurationTest]: ApplicationConfigurationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:18:19.129 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.olympusgate.OlympusGateApplication for test class com.olympusgate.ApplicationConfigurationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-05-30 17:18:19 - Starting ApplicationConfigurationTest using Java 21.0.10 with PID 60919 (started by sysout in /Users/sysout/codesys/projects/olympus-gate)
+2026-05-30 17:18:19 - Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-05-30 17:18:19 - The following 1 profile is active: "dev"
+2026-05-30 17:18:20 - Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-05-30 17:18:20 - Started ApplicationConfigurationTest in 1.449 seconds (process running for 2.091)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/sysout/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.13/979ce25f7d3096a2e82214ba7dc972a05ce7a171/byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
