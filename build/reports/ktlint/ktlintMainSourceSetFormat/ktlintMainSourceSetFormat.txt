@@ -1,0 +1,5 @@
+[31m/Users/sysout/codesys/projects/olympus-gate/src/main/kotlin/com/olympusgate/config/[0mOpenApiConfig.kt[31m:[0m22[31m:72:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/main/kotlin/com/olympusgate/config/[0mOpenApiConfig.kt[31m:[0m23[31m:22:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+
+Summary error count (descending) by rule:
+  standard:trailing-comma-on-call-site: 2

@@ -1,0 +1,56 @@
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mApplicationConfigurationTest.kt[31m:[0m15[31m:84:[0m Missing trailing comma before "]" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mApplicationConfigurationTest.kt[31m:[0m16[31m:6:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mApplicationConfigurationTest.kt[31m:[0m20[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m9[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m21[31m:51:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m25[31m:55:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m35[31m:1:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m39[31m:2:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m48[31m:3:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mCiWorkflowTest.kt[31m:[0m52[31m:4:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mDatabaseConfigTest.kt[31m:[0m4[31m:1:[0m Unused import [31m(standard:no-unused-imports)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mDatabaseConfigTest.kt[31m:[0m18[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mMetricsConfigTest.kt[31m:[0m7[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mOpenApiConfigTest.kt[31m:[0m7[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mRedisConfigTest.kt[31m:[0m4[31m:1:[0m Unused import [31m(standard:no-unused-imports)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mRedisConfigTest.kt[31m:[0m4[31m:61:[0m Unused import [31m(standard:no-unused-imports)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mRedisConfigTest.kt[31m:[0m12[31m:40:[0m Missing trailing comma before "]" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mRedisConfigTest.kt[31m:[0m12[31m:46:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/config/[0mRedisConfigTest.kt[31m:[0m17[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mDockerComposeTest.kt[31m:[0m9[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mDockerComposeTest.kt[31m:[0m21[31m:62:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mDockerComposeTest.kt[31m:[0m30[31m:58:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m9[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m13[31m:76:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m16[31m:73:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m19[31m:63:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m28[31m:62:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m31[31m:58:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m40[31m:52:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m43[31m:45:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m46[31m:35:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m55[31m:6:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m58[31m:16:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureHexagonalTest.kt[31m:[0m61[31m:2:[0m Trailing space(s) [31m(standard:no-trailing-spaces)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m4[31m:1:[0m Unused import [31m(standard:no-unused-imports)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m10[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m22[31m:24:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m31[31m:24:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m40[31m:31:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m44[31m:36:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m48[31m:38:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m52[31m:41:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m56[31m:42:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m65[31m:37:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m69[31m:19:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mProjectStructureTest.kt[31m:[0m73[31m:29:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mReadmeTest.kt[31m:[0m9[31m:1:[0m Class body should not start with blank line [31m(standard:no-empty-first-line-in-class-body)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mReadmeTest.kt[31m:[0m21[31m:48:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mReadmeTest.kt[31m:[0m30[31m:55:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+[31m/Users/sysout/codesys/projects/olympus-gate/src/test/kotlin/com/olympusgate/[0mReadmeTest.kt[31m:[0m40[31m:1:[0m Missing trailing comma before ")" [31m(standard:trailing-comma-on-call-site)[0m
+
+Summary error count (descending) by rule:
+  standard:trailing-comma-on-call-site: 25
+  standard:no-trailing-spaces: 11
+  standard:no-empty-first-line-in-class-body: 10
+  standard:no-unused-imports: 4

@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: olympus-gate
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.olympusgate: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/olympus_gate
+    username: postgres
+    password: postgres
+  redis:
+    host: localhost
+    port: 6379
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:testdb
+  redis:
+    host: localhost
+    port: 6379
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: \${DB_URL}
+    username: \${DB_USERNAME}
+    password: \${DB_PASSWORD}
+  redis:
+    host: \${REDIS_HOST}
+    port: \${REDIS_PORT}
