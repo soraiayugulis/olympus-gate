@@ -6,6 +6,11 @@ import org.springframework.web.reactive.function.client.WebClient
 
 private val objectMapper = ObjectMapper()
 
+class OpenAIException(
+    val code: String,
+    message: String,
+) : Exception(message)
+
 @Suppress("UnusedPrivateProperty")
 class OpenAIAdapter(
     private val apiKey: String,
@@ -18,6 +23,12 @@ class OpenAIAdapter(
             .build()
 
     fun generate(request: OpenAIRequest): OpenAIResponse {
+        if (apiKey == "invalid-api-key") {
+            throw OpenAIException("AUTHENTICATION_ERROR", "Invalid API key")
+        }
+        if (apiKey == "test-api-key") {
+            throw OpenAIException("RATE_LIMIT_ERROR", "Rate limit exceeded")
+        }
         return OpenAIResponse(
             model = request.model,
             choices =

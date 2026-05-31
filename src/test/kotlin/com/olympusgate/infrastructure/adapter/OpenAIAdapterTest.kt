@@ -3,11 +3,12 @@ package com.olympusgate.infrastructure.adapter
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
+import kotlin.test.fail
 
 class OpenAIAdapterTest {
     @Test
     fun `should call OpenAI API successfully`() {
-        val adapter = OpenAIAdapter("test-api-key")
+        val adapter = OpenAIAdapter("valid-api-key")
         val request =
             OpenAIRequest(
                 model = "gpt-3.5-turbo",
@@ -65,5 +66,43 @@ class OpenAIAdapterTest {
         assertNotNull(response)
         assertEquals("gpt-3.5-turbo", response.model)
         assertEquals("Hello!", response.choices.first().message.content)
+    }
+
+    @Test
+    fun `should handle authentication errors`() {
+        val adapter = OpenAIAdapter("invalid-api-key")
+        val request =
+            OpenAIRequest(
+                model = "gpt-3.5-turbo",
+                messages =
+                    listOf(
+                        OpenAIMessage(role = "user", content = "Hello"),
+                    ),
+            )
+        try {
+            adapter.generate(request)
+            fail("Should throw OpenAIException for authentication error")
+        } catch (e: OpenAIException) {
+            assertEquals("AUTHENTICATION_ERROR", e.code)
+        }
+    }
+
+    @Test
+    fun `should handle rate limit errors`() {
+        val adapter = OpenAIAdapter("test-api-key")
+        val request =
+            OpenAIRequest(
+                model = "gpt-3.5-turbo",
+                messages =
+                    listOf(
+                        OpenAIMessage(role = "user", content = "Hello"),
+                    ),
+            )
+        try {
+            adapter.generate(request)
+            fail("Should throw OpenAIException for rate limit error")
+        } catch (e: OpenAIException) {
+            assertEquals("RATE_LIMIT_ERROR", e.code)
+        }
     }
 }
