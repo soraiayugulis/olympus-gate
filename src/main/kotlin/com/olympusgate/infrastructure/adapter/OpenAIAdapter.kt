@@ -1,6 +1,10 @@
 package com.olympusgate.infrastructure.adapter
 
+import com.fasterxml.jackson.annotation.JsonProperty
+import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.web.reactive.function.client.WebClient
+
+private val objectMapper = ObjectMapper()
 
 @Suppress("UnusedPrivateProperty")
 class OpenAIAdapter(
@@ -31,20 +35,33 @@ class OpenAIAdapter(
 }
 
 data class OpenAIRequest(
+    @JsonProperty("model")
     val model: String,
+    @JsonProperty("messages")
     val messages: List<OpenAIMessage>,
-)
+) {
+    fun toJson(): String = objectMapper.writeValueAsString(this)
+}
 
 data class OpenAIMessage(
+    @JsonProperty("role")
     val role: String,
+    @JsonProperty("content")
     val content: String,
 )
 
 data class OpenAIResponse(
+    @JsonProperty("model")
     val model: String,
+    @JsonProperty("choices")
     val choices: List<OpenAIChoice>,
-)
+) {
+    companion object {
+        fun fromJson(json: String): OpenAIResponse = objectMapper.readValue(json, OpenAIResponse::class.java)
+    }
+}
 
 data class OpenAIChoice(
+    @JsonProperty("message")
     val message: OpenAIMessage,
 )
