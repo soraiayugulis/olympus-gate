@@ -105,4 +105,20 @@ class OpenAIAdapterTest {
             assertEquals("RATE_LIMIT_ERROR", e.code)
         }
     }
+
+    @Test
+    fun `should retry on transient errors`() {
+        val adapter = OpenAIAdapter("transient-error-key")
+        val request =
+            OpenAIRequest(
+                model = "gpt-3.5-turbo",
+                messages =
+                    listOf(
+                        OpenAIMessage(role = "user", content = "Hello"),
+                    ),
+            )
+        val response = adapter.generate(request)
+        assertNotNull(response)
+        assertEquals("gpt-3.5-turbo", response.model)
+    }
 }

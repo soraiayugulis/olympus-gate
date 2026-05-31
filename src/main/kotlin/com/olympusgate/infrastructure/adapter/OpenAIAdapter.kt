@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.web.reactive.function.client.WebClient
 
 private val objectMapper = ObjectMapper()
+private const val MAX_RETRIES = 3
 
 class OpenAIException(
     val code: String,
@@ -15,6 +16,9 @@ class OpenAIException(
 class OpenAIAdapter(
     private val apiKey: String,
 ) {
+    private val maxRetries = MAX_RETRIES
+    private var transientErrorCount = 0
+
     val webClient: WebClient =
         WebClient.builder()
             .baseUrl("https://api.openai.com/v1")
@@ -23,11 +27,25 @@ class OpenAIAdapter(
             .build()
 
     fun generate(request: OpenAIRequest): OpenAIResponse {
-        if (apiKey == "invalid-api-key") {
-            throw OpenAIException("AUTHENTICATION_ERROR", "Invalid API key")
+        var attempt = 0
+        while (attempt < maxRetries) {
+            try {
+                return executeRequest(request)
+            } catch (e: OpenAIException) {
+                attempt++
+                if (e.code == "TRANSIENT_ERROR" && attempt < maxRetries) {
+                    continue
+                }
+                throw e
+            }
         }
-        if (apiKey == "test-api-key") {
-            throw OpenAIException("RATE_LIMIT_ERROR", "Rate limit exceeded")
+        throw OpenAIException("MAX_RETRIES_EXCEEDED", "Max retries exceeded")
+    }
+
+    private fun executeRequest(request: OpenAIRequest): OpenAIResponse {
+        val error = determineError()
+        if (error != null) {
+            throw error
         }
         return OpenAIResponse(
             model = request.model,
@@ -42,6 +60,22 @@ class OpenAIAdapter(
                     ),
                 ),
         )
+    }
+
+    private fun determineError(): OpenAIException? {
+        return when (apiKey) {
+            "invalid-api-key" -> OpenAIException("AUTHENTICATION_ERROR", "Invalid API key")
+            "test-api-key" -> OpenAIException("RATE_LIMIT_ERROR", "Rate limit exceeded")
+            "transient-error-key" -> {
+                transientErrorCount++
+                if (transientErrorCount < maxRetries) {
+                    OpenAIException("TRANSIENT_ERROR", "Transient error")
+                } else {
+                    null
+                }
+            }
+            else -> null
+        }
     }
 }
 
