@@ -15,16 +15,18 @@ class OpenAIException(
 @Suppress("UnusedPrivateProperty")
 class OpenAIAdapter(
     private val apiKey: String,
+    webClient: WebClient? = null,
 ) {
     private val maxRetries = MAX_RETRIES
     private var transientErrorCount = 0
 
     val webClient: WebClient =
-        WebClient.builder()
-            .baseUrl("https://api.openai.com/v1")
-            .defaultHeader("Authorization", "Bearer $apiKey")
-            .defaultHeader("Content-Type", "application/json")
-            .build()
+        webClient
+            ?: WebClient.builder()
+                .baseUrl("https://api.openai.com/v1")
+                .defaultHeader("Authorization", "Bearer $apiKey")
+                .defaultHeader("Content-Type", "application/json")
+                .build()
 
     fun generate(request: OpenAIRequest): OpenAIResponse {
         var attempt = 0

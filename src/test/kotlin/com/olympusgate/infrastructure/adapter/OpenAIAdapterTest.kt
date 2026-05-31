@@ -1,6 +1,8 @@
 package com.olympusgate.infrastructure.adapter
 
+import io.mockk.mockk
 import org.junit.jupiter.api.Test
+import org.springframework.web.reactive.function.client.WebClient
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlin.test.fail
@@ -120,5 +122,12 @@ class OpenAIAdapterTest {
         val response = adapter.generate(request)
         assertNotNull(response)
         assertEquals("gpt-3.5-turbo", response.model)
+    }
+
+    @Test
+    fun `should accept custom WebClient for testing`() {
+        val mockWebClient = mockk<WebClient>()
+        val adapter = OpenAIAdapter("test-api-key", mockWebClient)
+        assertEquals(mockWebClient, adapter.webClient)
     }
 }
