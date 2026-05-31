@@ -186,7 +186,7 @@ This document provides a detailed implementation plan for the MVP phase, impleme
 - feat: add fallback logic
 - test: add edge case tests
 
-### 1.6 Implement OpenAI Provider Adapter
+### 1.6 Implement OpenAI Provider Adapter - DONE
 **File:** `src/main/kotlin/com/olympusgate/infrastructure/adapter/OpenAIAdapter.kt`
 
 **Steps:**
