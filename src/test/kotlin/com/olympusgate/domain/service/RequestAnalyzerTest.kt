@@ -16,11 +16,12 @@ class RequestAnalyzerTest {
     @Test
     fun `should estimate token count for code snippet`() {
         val analyzer = RequestAnalyzer()
-        val code = """
+        val code =
+            """
             fun main() {
                 println("Hello World")
             }
-        """.trimIndent()
+            """.trimIndent()
         val tokenCount = analyzer.estimateTokenCount(code)
         assertTrue(tokenCount > 0)
     }
@@ -43,11 +44,12 @@ class RequestAnalyzerTest {
     @Test
     fun `should detect code complexity`() {
         val analyzer = RequestAnalyzer()
-        val complexCode = """
+        val complexCode =
+            """
             fun complexFunction(data: List<String>): String {
                 return data.map { it.uppercase() }.joinToString(",")
             }
-        """.trimIndent()
+            """.trimIndent()
         val complexity = analyzer.analyzeComplexity(complexCode)
         assertTrue(complexity > 0)
     }
@@ -55,11 +57,12 @@ class RequestAnalyzerTest {
     @Test
     fun `should detect reasoning complexity`() {
         val analyzer = RequestAnalyzer()
-        val reasoningText = """
+        val reasoningText =
+            """
             Consider the following problem: We need to optimize the algorithm for large datasets.
             First, analyze the time complexity. Then, consider space complexity.
             Finally, propose a solution that balances both.
-        """.trimIndent()
+            """.trimIndent()
         val complexity = analyzer.analyzeComplexity(reasoningText)
         assertTrue(complexity > 0)
     }

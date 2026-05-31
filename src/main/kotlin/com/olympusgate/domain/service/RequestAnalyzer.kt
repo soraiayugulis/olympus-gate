@@ -27,18 +27,20 @@ class RequestAnalyzer {
         var complexity = 0
 
         // Code complexity indicators
-        val codePatterns = listOf(
-            "fun ", "function ", "def ", "class ", "interface ",
-            "if ", "else ", "for ", "while ", "when ", "match ",
-            "flatMap", "fold", "reduce", "map", "filter",
-            "{", "}", "(", ")", "[", "]",
-        )
+        val codePatterns =
+            listOf(
+                "fun ", "function ", "def ", "class ", "interface ",
+                "if ", "else ", "for ", "while ", "when ", "match ",
+                "flatMap", "fold", "reduce", "map", "filter",
+                "{", "}", "(", ")", "[", "]",
+            )
 
         // Reasoning complexity indicators
-        val reasoningPatterns = listOf(
-            "consider", "analyze", "propose", "optimize", "complexity",
-            "algorithm", "solution", "balance", "first", "then", "finally",
-        )
+        val reasoningPatterns =
+            listOf(
+                "consider", "analyze", "propose", "optimize", "complexity",
+                "algorithm", "solution", "balance", "first", "then", "finally",
+            )
 
         codePatterns.forEach { pattern ->
             complexity += text.split(pattern).size - 1
@@ -58,22 +60,31 @@ class RequestAnalyzer {
         val lowerText = text.lowercase()
 
         // Code task indicators
-        val codePatterns = listOf(
-            "write", "implement", "function", "class", "code", "program",
-            "algorithm", "debug", "fix", "refactor", "create",
-        )
+        val codePatterns =
+            listOf(
+                "write", "implement", "function", "class", "code", "program",
+                "algorithm", "debug", "fix", "refactor", "create",
+            )
 
         // QA task indicators
-        val qaPatterns = listOf(
-            "what", "how", "why", "explain", "difference", "compare",
-            "define", "describe", "question", "answer",
-        )
+        val qaPatterns =
+            listOf(
+                "what", "how", "why", "explain", "difference", "compare",
+                "define", "describe", "question", "answer",
+            )
 
         // Summarization task indicators
-        val summaryPatterns = listOf(
-            "summarize", "summary", "condense", "brief", "overview",
-            "shorten", "abstract", "recap",
-        )
+        val summaryPatterns =
+            listOf(
+                "summarize",
+                "summary",
+                "condense",
+                "brief",
+                "overview",
+                "shorten",
+                "abstract",
+                "recap",
+            )
 
         var codeScore = 0
         var qaScore = 0
