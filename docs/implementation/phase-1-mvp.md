@@ -155,7 +155,7 @@ This document provides a detailed implementation plan for the MVP phase, impleme
 - feat: implement task type detection
 - refactor: clean up RequestAnalyzer
 
-### 1.5 Implement Model Selection Engine (Rule-Based)
+### 1.5 Implement Model Selection Engine (Rule-Based) - DONE
 **File:** `src/main/kotlin/com/olympusgate/domain/service/ModelSelectionEngine.kt`
 
 **Steps:**
