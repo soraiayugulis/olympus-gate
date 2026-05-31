@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository
 class ModelConfigurationRepositoryImpl(
     private val jpaRepository: ModelConfigurationSpringDataRepository,
 ) : ModelConfigurationRepository {
-
     override fun save(model: ModelConfiguration): ModelConfiguration {
         val entity = toEntity(model)
         val saved = jpaRepository.save(entity)
