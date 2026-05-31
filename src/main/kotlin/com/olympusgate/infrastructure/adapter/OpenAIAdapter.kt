@@ -1,9 +1,18 @@
 package com.olympusgate.infrastructure.adapter
 
+import org.springframework.web.reactive.function.client.WebClient
+
 @Suppress("UnusedPrivateProperty")
 class OpenAIAdapter(
     private val apiKey: String,
 ) {
+    val webClient: WebClient =
+        WebClient.builder()
+            .baseUrl("https://api.openai.com/v1")
+            .defaultHeader("Authorization", "Bearer $apiKey")
+            .defaultHeader("Content-Type", "application/json")
+            .build()
+
     fun generate(request: OpenAIRequest): OpenAIResponse {
         return OpenAIResponse(
             model = request.model,

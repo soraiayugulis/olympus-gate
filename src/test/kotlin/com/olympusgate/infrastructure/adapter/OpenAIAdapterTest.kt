@@ -23,4 +23,10 @@ class OpenAIAdapterTest {
         assertEquals("gpt-3.5-turbo", response.model)
         assertNotNull(response.choices.first().message.content)
     }
+
+    @Test
+    fun `should configure WebClient with API key authentication`() {
+        val adapter = OpenAIAdapter("test-api-key")
+        assertNotNull(adapter.webClient)
+    }
 }
