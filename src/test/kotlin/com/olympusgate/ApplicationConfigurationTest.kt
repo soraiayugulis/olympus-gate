@@ -1,7 +1,6 @@
 package com.olympusgate
 
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
 class ApplicationConfigurationTest {
